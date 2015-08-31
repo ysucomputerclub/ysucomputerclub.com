@@ -17,10 +17,10 @@ h1, h2 {
 }
 
 h1 {
+	margin: 0;
 	padding: 0;
 	font-weight: 700;
 	font-size: 3em;
-	margin: 1em;
 }
 
 h1.large {
@@ -170,8 +170,8 @@ a img:hover {
 }
 
 @media screen and (min-width: 768px) {
-	#quickinfo h1{
-		margin: 2em;
+	#quickinfo {
+		padding: 8em 0;
 	}
 }
 
