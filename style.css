@@ -1,4 +1,4 @@
-html, body {
+body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -175,9 +175,27 @@ a img:hover {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 1em;
+	}
+	
+	.content {
+		padding: 2em 1em;
+	}
+}
+
 @media screen and (max-width: 320px) {
 	h1 {
 		font-size: 1.5em;
+	}
+	
+	h2 {
+		margin: 1em 0;
+	}
+	
+	p {
+		margin: 0;
 	}
 	
 	#logo {
