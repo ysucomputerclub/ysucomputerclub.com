@@ -179,7 +179,7 @@ a img:hover {
 	body {
 		font-size: 1em;
 	}
-	
+
 	.content {
 		padding: 2em 1em;
 	}
@@ -189,20 +189,28 @@ a img:hover {
 	h1 {
 		font-size: 1.5em;
 	}
-	
+
 	h2 {
 		margin: 1em 0;
 	}
-	
+
 	p {
 		margin: 0;
 	}
-	
+
 	#logo {
 		font-size: 1.25em;
 	}
-	
+
 	#quickinfo {
 		margin-top: -1.5em;
 	}
+}
+
+.small {
+	font-size: .9em;
+}
+
+.tiny {
+	font-size: .7em;
 }
