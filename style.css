@@ -124,13 +124,20 @@ a:hover {
 	background-attachment: fixed;
 	color: #fff;
 	margin-top: -0.5em;
-	padding: 4em 0;
+	padding: 4em 0 8em 0;
 	text-shadow: 2px 2px 12px #333;
 }
 
 #quickinfo p {
 	color: #fff;
-	margin-top: 0.5em;
+	margin-top: 0px;
+}
+
+#lhd-logo {
+	height: 300px;
+	padding: 0px;
+	margin-bottom: -40px;
+	border: 0px;
 }
 
 .signup {
@@ -171,7 +178,7 @@ a img:hover {
 
 @media screen and (min-width: 768px) {
 	#quickinfo {
-		padding: 8em 0;
+		padding: 4em 0 8em 0;
 	}
 }
 
@@ -204,6 +211,7 @@ a img:hover {
 
 	#quickinfo {
 		margin-top: -1.5em;
+		padding: 0 0 2em 0;
 	}
 }
 
