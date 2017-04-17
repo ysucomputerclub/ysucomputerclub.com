@@ -91,7 +91,7 @@ a:hover {
 }
 
 #top {
-	padding-top: 4em;
+	padding-top: 3em;
 }
 
 .black {
@@ -221,4 +221,8 @@ a img:hover {
 
 .tiny {
 	font-size: .7em;
+}
+
+.oldEvents {
+	display: none;
 }
