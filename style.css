@@ -5,7 +5,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
 	background-color: #d21f26;
-	//background-image: url('images/background.png');
+	background-image: url('images/background.png');
 	text-align: center;
 }
 
@@ -71,9 +71,9 @@ a:hover {
 	margin: 0.5em;
 }
 
-#header a {
+/*#header a {
 
-}
+}*/
 
 #logo {
 	display: inline-block;
@@ -92,6 +92,7 @@ a:hover {
 
 #top {
 	padding-top: 3em;
+	padding-bottom: 1.5em;
 }
 
 .black {
@@ -225,4 +226,12 @@ a img:hover {
 
 .oldEvents {
 	display: none;
+}
+#top .signUp {
+	display: inline-block;
+	color:white;
+	background-color:black;
+	border:none;
+	padding:0.5em;
+	border-radius: 2em;
 }
