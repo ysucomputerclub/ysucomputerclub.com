@@ -1,6 +1,6 @@
-penguinhackers.io
+ysucomputerclub.com
 ===========
 
-The Youngstown State University's Pengiuin Hackers' website, hosted live on GitHub.
+The Youngstown State University Computer Club website, hosted live on GitHub.
 
-http://penguinhackers.io/
+http://ysucomputerclub.com/
