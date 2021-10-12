@@ -177,6 +177,10 @@ a img:hover {
 	margin-bottom: 1em;
 }
 
+#LHDSchedule {
+	max-width: 90%;
+}
+
 @media screen and (min-width: 768px) {
 	#quickinfo {
 		padding: 4em 0 8em 0;
