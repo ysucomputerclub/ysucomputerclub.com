@@ -6,6 +6,9 @@ $brand-color: rgb(229, 0, 80) !default;
 
 /// breakpoints map
 $breakpoints: (
+  "x-small": (
+    min-width: 320px,
+  ),
   "small": (
     min-width: 480px,
   ),
