@@ -27,9 +27,6 @@ body {
   background-image: url("images/background-dark.png");
 }
 
-/**
- * Basic styles for links
- */
 p,
 h1,
 h2,
@@ -38,8 +35,29 @@ h4 {
   color: white;
 }
 
+p {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+@media (min-width: 480px) {
+  p {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 760px) {
+  h3 {
+    font-size: 36px;
+  }
+}
 a {
-  color: rgb(168, 168, 168);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
@@ -120,23 +138,14 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 .cover-section .text h3 {
   text-align: center;
-  font-size: 22px;
 }
 .cover-section .text p {
-  font-size: 16px;
   text-align: left;
   padding: 0 0.5rem;
 }
-.cover-section .text p.subtitle {
-  font-size: 22px;
-}
 @media (min-width: 480px) {
-  .cover-section .text h3 {
-    font-size: 28px;
-  }
   .cover-section .text p {
     padding: 0 1.25rem;
-    font-size: 22px;
     padding: 0 2rem;
   }
 }
@@ -186,12 +195,8 @@ a:hover, a:active, a:focus, a:focus-within {
   }
 }
 @media (min-width: 760px) {
-  .cover-section .text h3 {
-    font-size: 36px;
-  }
   .cover-section .text p {
     padding: 0 1.25rem;
-    font-size: 22px;
     padding: 0 2rem;
   }
 }
@@ -217,21 +222,56 @@ a:hover, a:active, a:focus, a:focus-within {
 }
 .join-section h3 {
   text-align: center;
-  font-size: 22px;
-}
-.join-section p {
-  font-size: 16px;
 }
 @media (min-width: 480px) {
   .join-section {
     margin: 3rem;
   }
-  .join-section h3 {
-    font-size: 28px;
+}
+
+.socials {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.socials .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.socials .line {
+  align-items: center;
+  display: none;
+}
+.socials .line span {
+  width: 100%;
+  border-top: 10px solid rgb(0, 0, 0);
+}
+.socials a {
+  margin: 1rem;
+}
+@media (min-width: 480px) {
+  .socials {
+    margin: 3rem;
   }
-  .join-section p {
-    font-size: 22px;
+}
+@media (min-width: 760px) {
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
+  .socials .line {
+    display: flex;
+  }
+}
+
+.socials-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */

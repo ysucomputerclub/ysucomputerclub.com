@@ -35,9 +35,7 @@ body {
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-/**
- * Basic styles for links
- */
+// Text Color
 p,
 h1,
 h2,
@@ -45,6 +43,29 @@ h3,
 h4 {
   color: $text-color;
 }
+
+// Font Sizes
+p {
+  font-size: 16px;
+}
+h3 {
+  font-size: 22px;
+}
+@include breakpoint("small") {
+  p {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+}
+@include breakpoint("medium") {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+// Links
 a {
   color: $link-color;
   text-decoration: none;
