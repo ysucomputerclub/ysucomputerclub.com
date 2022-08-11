@@ -34,5 +34,6 @@
 }
 
 .socials-header {
+  text-align: center;
   @include flex-center(center, row);
 }
