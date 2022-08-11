@@ -1,252 +1,237 @@
+/**
+ * Set up a decent box model on the root element
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
-	background-color: #d21f26;
-	background-image: url('images/background.png');
-	text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  background-color: #d21f26;
+  background-image: url("images/background-dark.png");
 }
 
-h1, h2 {
-	margin: 0;
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	color: #fff;
+/**
+ * Basic styles for links
+ */
+p,
+h1,
+h2,
+h3,
+h4 {
+  color: white;
 }
 
-h1 {
-	margin: 0;
-	padding: 0;
-	font-weight: 700;
-	font-size: 3em;
+a {
+  color: rgb(168, 168, 168);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(197, 197, 197);
+  text-decoration: underline;
 }
 
-h1.large {
-	font-size: 4em;
+.navbar {
+  color: red;
 }
-
-h2 {
-	margin: 1em;
-	padding: 0;
-}
-
-h2.thin {
-	font-weight: 400;
-}
-
-p {
-	margin: 0.5em 2em;
-	padding: 0;
-	font-size: 1.1em;
-	color: #fff;
-}
-
-h3 {
-	/*margin: 0;*/
-	padding: 0;
-}
-
-a, a:visited {
-	transition: all .25s;
-	color: #bbb;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #fff;
-}
-
-#header {
-	z-index: 2;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #000;
-	color: #fff;
-}
-
-#header p {
-	margin: 0.5em;
-}
-
-/*#header a {
-
-}*/
-
-#logo {
-	display: inline-block;
-	font-size: 2em;
-}
-
-#logo img {
-	height: .8em;
-	margin: 0 0 -0.1em;
-	padding-right: 0.25em;
-}
-
-#wrap {
-	width: 100%;
-}
-
-#top {
-	padding-top: 3em;
-	padding-bottom: 1.5em;
-}
-
-.black {
-	background-color: #000;
-}
-
-.button {
-	transition: all 0.25s ease;
-	margin: 5px auto;
-	padding: 0.25em 1em;
-	font-size: 1.25em;
-	color: #fff;
-	border-radius: 0.5em;
-	background-color: #222;
-	border-color: #000;
-	border-style: solid;
-	outline: none;
-	cursor: pointer;
-	box-shadow: inset 0 0.25em 1em #444;
-}
-
-.button:hover {
-	background-color: #777;
-}
-
-#quickinfo {
-	width: 100%;
-	background-image: url("images/city.png");
-	background-size: cover;
-	background-attachment: fixed;
-	color: #fff;
-	margin-top: -0.5em;
-	padding: 4em 0 8em 0;
-	text-shadow: 2px 2px 12px #333;
-}
-
-#quickinfo p {
-	color: #fff;
-	margin-top: 0px;
-}
-
-#quickinfo-logo {
-	height: 300px;
-	padding: 0px;
-	margin-bottom: 0px;
-	border: 0px;
-}
-
-.signup {
-	border: 3px solid #fff;
-	border-radius: 0.5em;
-	padding: 0 0.25em;
-	margin-left: 0.25em;
-	margin-right: 0.25em;
-	display: inline-block;
-}
-
-.content {
-	padding: 4em 1em;
-}
-
-#social .icon {
-	color: #000;
-	margin: 2em 0.5em;
-}
-
-#social .icon:hover {
-	opacity: 0.5;
-}
-
-a img {
-	transition: all 0.5s ease;
-}
-
-a img:hover {
-	opacity: .75;
-}
-
-#footer {
-	font-size: 0.75em;
-	color: #fff;
-	margin-bottom: 1em;
-}
-
-#LHDSchedule {
-	max-width: 90%;
-}
-
-@media screen and (min-width: 768px) {
-	#quickinfo {
-		padding: 4em 0 8em 0;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	body {
-		font-size: 1em;
-	}
-
-	.content {
-		padding: 2em 1em;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	h1 {
-		font-size: 1.5em;
-	}
-
-	h2 {
-		margin: 1em 0;
-	}
-
-	p {
-		margin: 0;
-	}
-
-	#logo {
-		font-size: 1.25em;
-	}
-
-	#quickinfo {
-		margin-top: -1.5em;
-		padding: 0 0 2em 0;
-	}
-}
-
-.small {
-	font-size: .9em;
-}
-
-.tiny {
-	font-size: .7em;
-}
-
-.oldEvents {
-	display: none;
-}
-#top .signUp {
-	display: inline-block;
-	color:white;
-	background-color:black;
-	border:none;
-	padding:0.5em;
-	border-radius: 2em;
-}
-.center{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-table, th, td {
-	border: 1px solid black;
-	text-align: center;
-	width: 50%;
+@media (min-width: 760px) {
+  .navbar {
+    color: blue;
   }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("images/city.png");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 200px;
+  color: white;
+  font-size: 1rem;
+}
+.hero h1 {
+  margin: 0;
+  padding: 0;
+}
+.hero .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (min-width: 760px) {
+  .hero {
+    font-size: 2rem;
+    height: 400px;
+  }
+}
+
+.cover-section {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.cover-section img {
+  width: 100%;
+  height: 100%;
+}
+.cover-section .right .left {
+  grid-column: 1;
+}
+.cover-section .image.left {
+  order: 2;
+}
+.cover-section .image.right {
+  order: 4;
+}
+.cover-section .text.right {
+  order: 1;
+}
+.cover-section .text.left {
+  order: 3;
+}
+.cover-section .image {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.cover-section .text h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.cover-section .text p {
+  font-size: 16px;
+  text-align: left;
+  padding: 0 0.5rem;
+}
+.cover-section .text p.subtitle {
+  font-size: 22px;
+}
+@media (min-width: 480px) {
+  .cover-section .text h3 {
+    font-size: 28px;
+  }
+  .cover-section .text p {
+    padding: 0 1.25rem;
+    font-size: 22px;
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 760px) {
+  .cover-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 0px;
+  }
+  .cover-section .right {
+    grid-column: 2;
+  }
+  .cover-section .right.image {
+    order: 4;
+    grid-column: span 2;
+  }
+}
+@media (min-width: 760px) and (min-width: 1200px) {
+  .cover-section .right.image {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 760px) {
+  .cover-section .right.text {
+    order: 2;
+  }
+}
+@media (min-width: 760px) {
+  .cover-section .left {
+    grid-column: 1;
+  }
+  .cover-section .left.text {
+    order: 3;
+    grid-column: span 2;
+  }
+}
+@media (min-width: 760px) and (min-width: 1200px) {
+  .cover-section .left.text {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 760px) {
+  .cover-section .image.left {
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+  }
+  .cover-section .image.right {
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+  }
+}
+@media (min-width: 760px) {
+  .cover-section .text h3 {
+    font-size: 36px;
+  }
+  .cover-section .text p {
+    padding: 0 1.25rem;
+    font-size: 22px;
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .cover-section .image {
+    max-height: 488px;
+  }
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+.page-container .page {
+  max-width: 1440px;
+  background-image: url("images/background.png");
+}
+
+.join-section {
+  background-color: rgba(129, 127, 127, 0.2);
+  margin: 1rem;
+  padding: 1rem;
+}
+.join-section h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.join-section p {
+  font-size: 16px;
+}
+@media (min-width: 480px) {
+  .join-section {
+    margin: 3rem;
+  }
+  .join-section h3 {
+    font-size: 28px;
+  }
+  .join-section p {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

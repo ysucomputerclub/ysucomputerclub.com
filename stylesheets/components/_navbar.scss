@@ -1,0 +1,6 @@
+.navbar {
+  color: red;
+  @include breakpoint("medium") {
+    color: blue;
+  }
+}
