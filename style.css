@@ -78,6 +78,33 @@ a:hover, a:active, a:focus, a:focus-within {
   text-decoration: underline;
 }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+.page-container .page {
+  max-width: 1440px;
+  background-image: url("images/background.png");
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer p {
+  font-size: 16px;
+}
+.footer .site-info {
+  display: flex;
+}
+.footer .site-info a {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .navbar {
   color: red;
 }
@@ -219,15 +246,6 @@ a:hover, a:active, a:focus, a:focus-within {
   }
 }
 
-.page-container {
-  display: flex;
-  justify-content: center;
-}
-.page-container .page {
-  max-width: 1440px;
-  background-image: url("images/background.png");
-}
-
 .join-section {
   background-color: rgba(129, 127, 127, 0.2);
   margin: 1rem;
@@ -286,24 +304,6 @@ a:hover, a:active, a:focus, a:focus-within {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
-
-.footer {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.footer p {
-  font-size: 16px;
-}
-.footer .site-info {
-  display: flex;
-}
-.footer .site-info a {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

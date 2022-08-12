@@ -6,6 +6,9 @@
 
 @import "abstracts/mixins", "abstracts/variables";
 
-@import "components/navbar", "components/hero", "components/cover-section",
-  "components/page-container", "components/join-section", "components/socials",
-  "components/footer";
+// Global
+@import "components/page-container", "components/footer", "components/navbar";
+
+// Home
+@import "components/home/hero", "components/home/cover-section",
+  "components/home/join-section", "components/home/socials";
