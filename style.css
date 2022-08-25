@@ -288,7 +288,7 @@ a:hover, a:active, a:focus, a:focus-within {
     margin: 3rem;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 1000px) {
   .socials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

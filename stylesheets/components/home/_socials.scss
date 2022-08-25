@@ -24,7 +24,7 @@
   @include breakpoint("small") {
     margin: 3rem;
   }
-  @include breakpoint("medium") {
+  @include breakpoint("large") {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     .line {
