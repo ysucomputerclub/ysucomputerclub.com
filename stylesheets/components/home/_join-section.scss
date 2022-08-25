@@ -1,0 +1,12 @@
+.join-section {
+  background-color: rgba(129, 127, 127, 0.2);
+  margin: 1rem;
+  padding: 1rem;
+  h3 {
+    text-align: center;
+  }
+
+  @include breakpoint("small") {
+    margin: 3rem;
+  }
+}

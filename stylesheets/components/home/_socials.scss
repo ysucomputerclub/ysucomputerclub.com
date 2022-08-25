@@ -1,0 +1,39 @@
+.socials {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+
+  .links {
+    @include flex-center(center, row);
+    flex-wrap: wrap;
+  }
+
+  .line {
+    align-items: center;
+    display: none;
+    span {
+      width: 100%;
+      border-top: 10px solid rgba(0, 0, 0);
+    }
+  }
+
+  a {
+    margin: 1rem;
+  }
+
+  @include breakpoint("small") {
+    margin: 3rem;
+  }
+  @include breakpoint("large") {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .line {
+      display: flex;
+    }
+  }
+}
+
+.socials-header {
+  text-align: center;
+  @include flex-center(center, row);
+}

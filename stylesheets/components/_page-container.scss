@@ -1,0 +1,8 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  .page {
+    max-width: 1440px;
+    background-image: url("images/background.png");
+  }
+}
